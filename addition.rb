@@ -1,11 +1,18 @@
-puts "We're going to add some numbers together!"
+p "We're going to add some numbers!"
 
-puts "Give me a number: "
-num1 = gets.chomp.to_i
+def num1
+	puts "Give me a number: "
+	gets.chomp.to_i
+end
 
-puts "Give me another number: "
-num2 = gets.chomp.to_i
+def num2
+	puts "Give me another number:"
+	gets.chomp.to_i
+end
 
-answer = num1 + num2
+def answer(num1,num2)
+	puts "#{num1} plus #{num2} is:"
+	p num1+num2
+end
 
-puts "#{num1} + #{num2} = #{answer}"
+answer(num1,num2)
